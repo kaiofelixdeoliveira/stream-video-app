@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:todo_stream_video/src/pages/upload/upload_video.dart';
+import 'package:todo_stream_video/src/pages/video_details.dart';
 import 'package:todo_stream_video/src/widgets/custom_list_item.dart';
 import 'package:todo_stream_video/src/widgets/video.dart';
 
@@ -71,6 +73,7 @@ recentVideos(double width, double heigth, BuildContext context) => Container(
             ),
             title: 'The Flutter YouTube Channel',
           ),
+          Divider(),
           CustomListItem(
             subtitle: 'Three-line ListTile',
             thumbnail: Container(
@@ -80,6 +83,7 @@ recentVideos(double width, double heigth, BuildContext context) => Container(
             ),
             title: 'The Flutter YouTube Channel',
           ),
+          Divider(),
           CustomListItem(
             subtitle: 'Three-line ListTile',
             thumbnail: Container(
@@ -89,6 +93,7 @@ recentVideos(double width, double heigth, BuildContext context) => Container(
             ),
             title: 'The Flutter YouTube Channel',
           ),
+          Divider(),
           CustomListItem(
             subtitle: 'Three-line ListTile',
             thumbnail: Container(
@@ -108,126 +113,117 @@ myFeed(BuildContext context) => Container(
         shrinkWrap: true,
         scrollDirection: Axis.horizontal,
         children: <Widget>[
-          Container(
-            margin: EdgeInsets.only(right: 8.0),
-            width: 250.0,
-            child: Column(
-              children: <Widget>[
-                Container(
-                  height: 150.00,
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: NetworkImage(
-                            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTro7Yy91CzFVEglLCaTs7hf3cN38kuFu2duxDx1hKvoEI2UQEE',
-                          ),
-                          fit: BoxFit.fill)),
-                ),
-                Container(
-                  color: Theme.of(context).cardColor,
-                  child: ListTile(
-                    title: Text('One-line with both widgets'),
-                    trailing: Icon(Icons.more_vert),
+          InkWell(
+            onTap: () => viewDetails(context),
+            child: Container(
+              margin: EdgeInsets.only(right: 8.0),
+              width: 250.0,
+              child: Column(
+                children: <Widget>[
+                  Container(
+                    height: 150.00,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: NetworkImage(
+                              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTro7Yy91CzFVEglLCaTs7hf3cN38kuFu2duxDx1hKvoEI2UQEE',
+                            ),
+                            fit: BoxFit.fill)),
                   ),
-                ),
-              ],
+                  Container(
+                    color: Theme.of(context).cardColor,
+                    child: ListTile(
+                      title: Text('One-line with both widgets'),
+                      trailing: Icon(Icons.more_vert),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
-          Container(
-            margin: EdgeInsets.only(right: 8.0),
-            width: 250.0,
-            child: Column(
-              children: <Widget>[
-                Container(
-                  height: 150.00,
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: NetworkImage(
-                            'https://br.web.img3.acsta.net/pictures/19/05/09/22/29/3613535.jpg',
-                          ),
-                          fit: BoxFit.fill)),
-                ),
-                Container(
-                  color: Theme.of(context).cardColor,
-                  child: ListTile(
-                    title: Text('One-line with both widgets'),
-                    trailing: Icon(Icons.more_vert),
+          InkWell(
+            onTap: () => viewDetails(context),
+            child: Container(
+              margin: EdgeInsets.only(right: 8.0),
+              width: 250.0,
+              child: Column(
+                children: <Widget>[
+                  Container(
+                    height: 150.00,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: NetworkImage(
+                              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTro7Yy91CzFVEglLCaTs7hf3cN38kuFu2duxDx1hKvoEI2UQEE',
+                            ),
+                            fit: BoxFit.fill)),
                   ),
-                ),
-              ],
+                  Container(
+                    color: Theme.of(context).cardColor,
+                    child: ListTile(
+                      title: Text('One-line with both widgets'),
+                      trailing: Icon(Icons.more_vert),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
-          Container(
-            margin: EdgeInsets.only(right: 8.0),
-            width: 250.0,
-            child: Column(
-              children: <Widget>[
-                Container(
-                  height: 150.00,
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: NetworkImage(
-                            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTro7Yy91CzFVEglLCaTs7hf3cN38kuFu2duxDx1hKvoEI2UQEE',
-                          ),
-                          fit: BoxFit.fill)),
-                ),
-                Container(
-                  color: Theme.of(context).cardColor,
-                  child: ListTile(
-                    title: Text('One-line with both widgets'),
-                    trailing: Icon(Icons.more_vert),
+          InkWell(
+            onTap: () => viewDetails(context),
+            child: Container(
+              margin: EdgeInsets.only(right: 8.0),
+              width: 250.0,
+              child: Column(
+                children: <Widget>[
+                  Container(
+                    height: 150.00,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: NetworkImage(
+                              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTro7Yy91CzFVEglLCaTs7hf3cN38kuFu2duxDx1hKvoEI2UQEE',
+                            ),
+                            fit: BoxFit.fill)),
                   ),
-                ),
-              ],
+                  Container(
+                    color: Theme.of(context).cardColor,
+                    child: ListTile(
+                      title: Text('One-line with both widgets'),
+                      trailing: Icon(Icons.more_vert),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
-          Container(
-            margin: EdgeInsets.only(right: 8.0),
-            width: 250.0,
-            child: Column(
-              children: <Widget>[
-                Container(
-                  height: 150.00,
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: NetworkImage(
-                            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTro7Yy91CzFVEglLCaTs7hf3cN38kuFu2duxDx1hKvoEI2UQEE',
-                          ),
-                          fit: BoxFit.fill)),
-                ),
-                Container(
-                  color: Theme.of(context).cardColor,
-                  child: ListTile(
-                    title: Text('One-line with both widgets'),
-                    trailing: Icon(Icons.more_vert),
+          InkWell(
+            onTap: () => viewDetails(context),
+            child: Container(
+              margin: EdgeInsets.only(right: 8.0),
+              width: 250.0,
+              child: Column(
+                children: <Widget>[
+                  Container(
+                    height: 150.00,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: NetworkImage(
+                              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTro7Yy91CzFVEglLCaTs7hf3cN38kuFu2duxDx1hKvoEI2UQEE',
+                            ),
+                            fit: BoxFit.fill)),
                   ),
-                ),
-              ],
-            ),
-          ),
-          Container(
-            margin: EdgeInsets.only(right: 8.0),
-            width: 250.0,
-            child: Column(
-              children: <Widget>[
-                Container(
-                  height: 150.00,
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: NetworkImage(
-                            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTro7Yy91CzFVEglLCaTs7hf3cN38kuFu2duxDx1hKvoEI2UQEE',
-                          ),
-                          fit: BoxFit.fill)),
-                ),
-                Container(
-                  color: Theme.of(context).cardColor,
-                  child: ListTile(
-                    title: Text('One-line with both widgets'),
-                    trailing: Icon(Icons.more_vert),
+                  Container(
+                    color: Theme.of(context).cardColor,
+                    child: ListTile(
+                      title: Text('One-line with both widgets'),
+                      trailing: Icon(Icons.more_vert),
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ],
       ),
     );
+
+viewDetails(BuildContext context) => Navigator.push(
+    context, MaterialPageRoute(builder: (context) => VideoDetailsPage()));

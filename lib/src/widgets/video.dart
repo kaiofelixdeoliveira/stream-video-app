@@ -38,9 +38,6 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
-    final deviceRatio = size.width / size.height;
-
     return Stack(
       alignment: Alignment.center,
       children: <Widget>[

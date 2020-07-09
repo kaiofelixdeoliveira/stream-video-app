@@ -17,7 +17,6 @@ class CustomListItem extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 5.0),
       child: Container(
-        color: Theme.of(context).cardColor,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Row(

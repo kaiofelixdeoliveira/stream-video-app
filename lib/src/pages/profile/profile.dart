@@ -140,6 +140,7 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               title: 'The Flutter YouTube Channel',
             ),
+            Divider(),
             CustomListItem(
               subtitle: 'Three-line ListTile',
               thumbnail: Container(
@@ -149,6 +150,7 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               title: 'The Flutter YouTube Channel',
             ),
+            Divider(),
             CustomListItem(
               subtitle: 'Three-line ListTile',
               thumbnail: Container(
@@ -158,6 +160,7 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               title: 'The Flutter YouTube Channel',
             ),
+            Divider(),
             CustomListItem(
               subtitle: 'Three-line ListTile',
               thumbnail: Container(

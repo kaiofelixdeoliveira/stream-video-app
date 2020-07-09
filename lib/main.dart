@@ -21,7 +21,7 @@ class _AppState extends State<App> {
 
   static List<Widget> _widgetOptions = <Widget>[
     HomePage(title: 'Home'),
-    VideoDetalsPage(),
+    UploadPage(),
     ProfilePage(),
     ExplorePage()
   ];
